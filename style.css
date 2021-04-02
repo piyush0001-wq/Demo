@@ -64,6 +64,11 @@ a.active, a:hover {
   display: none;
 }
 
+#check:checked i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 @media (max-width: 952px) {
   label.logo {
     font-size: 30px;
