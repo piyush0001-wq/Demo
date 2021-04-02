@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -6,19 +7,36 @@
   box-sizing: border-box;
 }
 body{
-  font-family: montserrat;
+  font-family: Poppins;
+  height: 100vh;
+  font-weight: 600;
 }
+////////////////////////////////////////////////////////////
 nav{
-  background: #0082e6;
-  height: 80px;
+  // background: #e6dace;
+  background: #ffffff;
+  height: 100px;
   width: 100%;
 }
-label.logo{
-  color: white;
-  font-size: 35px;
+i{
+  color: black;
+}
+.logo{
+  color: rgb(0, 0, 0);
+  font-size: 25px;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
+  display: block;
+  float: left;
+  span{
+    color: #ff8000;
+    font-size: 20px;
+
+  }
+  h2{
+    width: 200px;
+  }
 }
 nav ul{
   float: right;
@@ -30,14 +48,14 @@ nav ul li{
   margin: 0 5px;
 }
 nav ul li a{
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
 }
 a.active,a:hover{
-  background: #1b9bff;
+  background: #ff8000;
   transition: .5s;
 }
 .checkbtn{
@@ -55,6 +73,103 @@ a.active,a:hover{
 #check:checked i{
     transform: rotate(90deg);
 }
+.container{
+  height: 100vh;
+  width: 100%;
+  .left{
+    height: 100vh;
+    width: 40%;
+    background: #e6dace;
+  }
+  .center{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    height: 70vh;
+    width: 60%;
+    background-color: #fcf5ef;
+    box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    .leftInfo{
+      background: #eeeceb;
+      text-align: center;
+      .myImg{
+        height: 150px;
+        width: 150px;
+        background: red;
+        border-radius: 50%;
+        margin: 40px auto;
+      }
+      hr{
+        border: 2px solid #ff8000 ;
+        width: 80px;
+        margin: 30px auto;
+      }
+      p{
+        font-size: 20px;
+      }
+      .social{
+        background: #ffffff;
+        margin-top: 50px;
+        height: 10vh;
+        width: 100%;
+        li{
+          display: inline;
+          
+        }
+      }
+    }
+    .rightInfo{
+      background: #ffffff;
+      h1{
+        font-size: 100px;
+        font-weight: bold;
+        margin: 30px 0 0 20px;
+      }
+      h3{
+        margin: 0px 0 10px 20px;
+      }
+      button{
+        border: none;
+        outline: none;
+        padding: 10px 40px;
+        margin: 10px 20px;
+      }
+      .primary{
+        background: #ff8000;
+        color: white;
+        font-weight: 500;
+        border: 2px solid #ff8000;
+      }
+      .primary:hover{
+       background: white;
+       color: black;
+       transition: 0.3s;
+      }
+      .secondary{
+        background: #ffffff;
+        border: 2px solid #ff8000;
+      }
+      .secondary:hover{
+        background: #ff8000;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      p{
+       padding: 10px 20px;
+       font-weight: 400;
+      }
+    }
+  }
+}
+
+
+
+
+
+
 @media (max-width: 952px){
   label.logo{
     font-size: 30px;
@@ -63,7 +178,17 @@ a.active,a:hover{
   nav ul li a{
     font-size: 16px;
   }
+  .center{
+    width: 80%;
+    height: 70vh;
+    grid-template-columns: 40% 60%;
+  }
 }
+////////////////////////////////////////////////////////////
+
+
+
+
 @media (max-width: 858px){
   .checkbtn{
     display: block;
@@ -72,11 +197,12 @@ a.active,a:hover{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #2c3e50;
+    background: #cccccc;
     top: 80px;
     left: -100%;
     text-align: center;
     transition: all .5s;
+    z-index: 111;
   }
   nav ul li{
     display: block;

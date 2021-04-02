@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -8,21 +9,38 @@
 }
 
 body {
-  font-family: montserrat;
+  font-family: Poppins;
+  height: 100vh;
+  font-weight: 600;
 }
 
 nav {
-  background: #0082e6;
-  height: 80px;
+  background: #ffffff;
+  height: 100px;
   width: 100%;
 }
 
-label.logo {
-  color: white;
-  font-size: 35px;
+i {
+  color: black;
+}
+
+.logo {
+  color: black;
+  font-size: 25px;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
+  display: block;
+  float: left;
+}
+
+.logo span {
+  color: #ff8000;
+  font-size: 20px;
+}
+
+.logo h2 {
+  width: 200px;
 }
 
 nav ul {
@@ -37,7 +55,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: black;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
@@ -45,7 +63,7 @@ nav ul li a {
 }
 
 a.active, a:hover {
-  background: #1b9bff;
+  background: #ff8000;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -69,6 +87,119 @@ a.active, a:hover {
           transform: rotate(90deg);
 }
 
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+.container .left {
+  height: 100vh;
+  width: 40%;
+  background: #e6dace;
+}
+
+.container .center {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  height: 70vh;
+  width: 60%;
+  background-color: #fcf5ef;
+  -webkit-box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
+          box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+}
+
+.container .center .leftInfo {
+  background: #eeeceb;
+  text-align: center;
+}
+
+.container .center .leftInfo .myImg {
+  height: 150px;
+  width: 150px;
+  background: red;
+  border-radius: 50%;
+  margin: 40px auto;
+}
+
+.container .center .leftInfo hr {
+  border: 2px solid #ff8000;
+  width: 80px;
+  margin: 30px auto;
+}
+
+.container .center .leftInfo p {
+  font-size: 20px;
+}
+
+.container .center .leftInfo .social {
+  background: #ffffff;
+  margin-top: 50px;
+  height: 10vh;
+  width: 100%;
+}
+
+.container .center .leftInfo .social li {
+  display: inline;
+}
+
+.container .center .rightInfo {
+  background: #ffffff;
+}
+
+.container .center .rightInfo h1 {
+  font-size: 100px;
+  font-weight: bold;
+  margin: 30px 0 0 20px;
+}
+
+.container .center .rightInfo h3 {
+  margin: 0px 0 10px 20px;
+}
+
+.container .center .rightInfo button {
+  border: none;
+  outline: none;
+  padding: 10px 40px;
+  margin: 10px 20px;
+}
+
+.container .center .rightInfo .primary {
+  background: #ff8000;
+  color: white;
+  font-weight: 500;
+  border: 2px solid #ff8000;
+}
+
+.container .center .rightInfo .primary:hover {
+  background: white;
+  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .center .rightInfo .secondary {
+  background: #ffffff;
+  border: 2px solid #ff8000;
+}
+
+.container .center .rightInfo .secondary:hover {
+  background: #ff8000;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .center .rightInfo p {
+  padding: 10px 20px;
+  font-weight: 400;
+}
+
 @media (max-width: 952px) {
   label.logo {
     font-size: 30px;
@@ -76,6 +207,12 @@ a.active, a:hover {
   }
   nav ul li a {
     font-size: 16px;
+  }
+  .center {
+    width: 80%;
+    height: 70vh;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
   }
 }
 
@@ -87,12 +224,13 @@ a.active, a:hover {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #2c3e50;
+    background: #cccccc;
     top: 80px;
     left: -100%;
     text-align: center;
     -webkit-transition: all .5s;
     transition: all .5s;
+    z-index: 111;
   }
   nav ul li {
     display: block;
