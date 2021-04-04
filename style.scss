@@ -251,6 +251,9 @@ a:hover {
         .buttons {
           float: right;
           margin-top: -105px;
+          button {
+            padding: 10px 20px;
+          }
         }
       }
     }

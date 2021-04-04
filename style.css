@@ -292,5 +292,8 @@ a:hover {
     float: right;
     margin-top: -105px;
   }
+  .container .center .rightInfo .buttons button {
+    padding: 10px 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
