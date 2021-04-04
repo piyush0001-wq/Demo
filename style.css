@@ -62,10 +62,11 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-a.active, a:hover {
+a.active,
+a:hover {
   background: #ff8000;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .checkbtn {
@@ -136,17 +137,6 @@ a.active, a:hover {
   font-size: 20px;
 }
 
-.container .center .leftInfo .social {
-  background: #ffffff;
-  margin-top: 50px;
-  height: 10vh;
-  width: 100%;
-}
-
-.container .center .leftInfo .social li {
-  display: inline;
-}
-
 .container .center .rightInfo {
   background: #ffffff;
 }
@@ -170,14 +160,12 @@ a.active, a:hover {
 
 .container .center .rightInfo .primary {
   background: #ff8000;
-  color: white;
   font-weight: 500;
   border: 2px solid #ff8000;
 }
 
 .container .center .rightInfo .primary:hover {
   background: white;
-  color: black;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -228,8 +216,8 @@ a.active, a:hover {
     top: 80px;
     left: -100%;
     text-align: center;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     z-index: 111;
   }
   nav ul li {
@@ -240,12 +228,72 @@ a.active, a:hover {
   nav ul li a {
     font-size: 20px;
   }
-  a:hover, a.active {
+  a:hover,
+  a.active {
     background: none;
     color: #0082e6;
   }
   #check:checked ~ ul {
     left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background: #0082e6;
+  }
+  .container {
+    height: 100vh;
+    width: 100%;
+  }
+  .container .left {
+    height: 30vh;
+    width: 100%;
+    background: #e6dace;
+  }
+  .container .center {
+    top: 25%;
+    left: 10%;
+    height: 80vh;
+    width: 80%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 40% 60%;
+        grid-template-rows: 40% 60%;
+  }
+  .container .center .leftInfo {
+    padding-top: 40px;
+  }
+  .container .center .leftInfo h1 {
+    display: inline;
+    line-height: 50px;
+  }
+  .container .center .leftInfo hr {
+    margin: auto auto;
+  }
+  .container .center .leftInfo .myImg {
+    height: 80px;
+    width: 80px;
+    float: left;
+    margin: 10px 20px;
+  }
+  .container .center .leftInfo p {
+    width: 100%;
+    line-height: 30px;
+  }
+  .container .center .rightInfo h1 {
+    font-size: 50px;
+    width: 30%;
+    font-weight: bold;
+    margin: 0;
+    padding: 0px 20px;
+  }
+  .container .center .rightInfo h3 {
+    width: 50%;
+  }
+  .container .center .rightInfo .buttons {
+    float: right;
+    margin-top: -105px;
   }
 }
 /*# sourceMappingURL=style.css.map */
