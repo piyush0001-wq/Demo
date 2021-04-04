@@ -108,6 +108,7 @@ a:hover {
       }
       p {
         font-size: 20px;
+        color: #757575;
       }
     }
     .rightInfo {
@@ -254,6 +255,50 @@ a:hover {
           button {
             padding: 10px 20px;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    background: #0082e6;
+  }
+  .container {
+    .center {
+      .leftInfo {
+        display: block;
+        hr {
+          margin: 10px 45px 0 0;
+          float: right;
+        }
+        p {
+          margin-top: 20px;
+          margin-left: 55px;
+        }
+      }
+      .rightInfo {
+        h1 {
+          font-size: 40px;
+        }
+        h3 {
+          width: 100%;
+          margin-bottom: 0;
+        }
+        .buttons {
+          margin: 0px;
+          padding: 0;
+          width: 100%;
+          button {
+            // margin-left: -20px;
+
+            padding: 5px 15px;
+          }
+        }
+        p {
+          font-size: 13px;
+          font-weight: 600;
         }
       }
     }
