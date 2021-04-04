@@ -262,9 +262,6 @@ a:hover {
 }
 
 @media screen and (max-width: 360px) {
-  body {
-    background: #0082e6;
-  }
   .container {
     .center {
       .leftInfo {
@@ -297,8 +294,8 @@ a:hover {
           }
         }
         p {
-          font-size: 13px;
-          font-weight: 600;
+          font-size: 14px;
+          // font-weight: 600;
         }
       }
     }
