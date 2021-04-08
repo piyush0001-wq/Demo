@@ -1,0 +1,47 @@
+body {
+  text-align: center;
+}
+
+.blog-card {
+  margin: 70px 30px 50px 30px;
+  -webkit-box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
+          box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
+  background: rgba(255, 255, 255, 0.438);
+  padding: 30px;
+}
+
+.blog-card h3 {
+  color: grey;
+}
+
+.blog-card p {
+  margin: 20px;
+}
+
+.blog-card a {
+  margin: 20px;
+  padding: 10px 20px;
+}
+
+.blog-card:hover {
+  background: #f3f3f3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+hr {
+  margin: 0 auto;
+  width: 100px;
+  border: 1px solid silver;
+}
+
+section {
+  background: #e6dace;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 300vh;
+  width: 40%;
+}
+/*# sourceMappingURL=projects.css.map */

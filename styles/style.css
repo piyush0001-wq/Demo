@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+  height: 100vh;
+  font-weight: 600;
+}
+
+nav {
+  background: #ffffff;
+  height: 100px;
+  width: 100%;
+}
+
+i {
+  color: black;
+}
+
+.logo {
+  color: black;
+  font-size: 25px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  display: block;
+  float: left;
+}
+
+.logo span {
+  color: #ff8000;
+  font-size: 20px;
+}
+
+.logo h2 {
+  width: 200px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background: #ff8000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+.container .left {
+  height: 100vh;
+  width: 40%;
+  background: #e6dace;
+}
+
+.container .center {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  height: 70vh;
+  width: 60%;
+  background-color: #fcf5ef;
+  -webkit-box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
+          box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+}
+
+.container .center .leftInfo {
+  background: #eeeceb;
+  text-align: center;
+}
+
+.container .center .leftInfo .myImg {
+  height: 150px;
+  width: 150px;
+  background: url(../hero.JPG);
+  background-size: cover;
+  border-radius: 50%;
+  margin: 40px auto;
+}
+
+.container .center .leftInfo hr {
+  border: 2px solid #ff8000;
+  width: 80px;
+  margin: 30px auto;
+}
+
+.container .center .leftInfo p {
+  font-size: 20px;
+  color: #757575;
+}
+
+.container .center .rightInfo {
+  background: #ffffff;
+}
+
+.container .center .rightInfo h1 {
+  font-size: 100px;
+  font-weight: bold;
+  margin: 30px 0 0 20px;
+}
+
+.container .center .rightInfo h3 {
+  margin: 0px 0 10px 20px;
+}
+
+.container .center .rightInfo a {
+  border: none;
+  outline: none;
+}
+
+.container .center .rightInfo .primary {
+  background: #ff8000;
+  font-weight: 500;
+  border: 2px solid #ff8000;
+  padding: 5px 15px;
+  margin: 10px 20px;
+}
+
+.container .center .rightInfo .primary:hover {
+  background: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: black;
+}
+
+.container .center .rightInfo .secondary {
+  background: #ffffff;
+  border: 2px solid #ff8000;
+  padding: 5px 15px;
+  margin: 10px 20px;
+}
+
+.container .center .rightInfo .secondary:hover {
+  background: #ff8000;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .center .rightInfo p {
+  padding: 10px 20px;
+  font-weight: 400;
+}
+
+.container .center .rightInfo p a {
+  padding: 5px 15px;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  .center {
+    width: 80%;
+    height: 70vh;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #cccccc;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 111;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 100vh;
+    width: 100%;
+  }
+  .container .left {
+    height: 30vh;
+    width: 100%;
+    background: #e6dace;
+  }
+  .container .center {
+    top: 25%;
+    left: 10%;
+    height: 80vh;
+    width: 80%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 40% 60%;
+        grid-template-rows: 40% 60%;
+  }
+  .container .center .leftInfo {
+    padding-top: 40px;
+  }
+  .container .center .leftInfo h1 {
+    display: inline;
+    line-height: 50px;
+  }
+  .container .center .leftInfo hr {
+    margin: auto auto;
+  }
+  .container .center .leftInfo .myImg {
+    height: 80px;
+    width: 80px;
+    float: left;
+    margin: 10px 20px;
+  }
+  .container .center .leftInfo p {
+    width: 100%;
+    line-height: 30px;
+  }
+  .container .center .rightInfo h1 {
+    font-size: 50px;
+    width: 30%;
+    font-weight: bold;
+    margin: 0;
+    padding: 0px 20px;
+  }
+  .container .center .rightInfo h3 {
+    width: 50%;
+  }
+  .container .center .rightInfo .buttons {
+    float: right;
+    margin-top: -105px;
+  }
+  .container .center .rightInfo .buttons button {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container .center .leftInfo {
+    display: block;
+  }
+  .container .center .leftInfo hr {
+    margin: 10px 45px 0 0;
+    float: right;
+  }
+  .container .center .leftInfo p {
+    margin-top: 20px;
+    margin-left: 55px;
+  }
+  .container .center .rightInfo h1 {
+    font-size: 40px;
+  }
+  .container .center .rightInfo h3 {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .container .center .rightInfo .buttons {
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+  }
+  .container .center .rightInfo .buttons a {
+    padding: 5px 15px;
+  }
+  .container .center .rightInfo p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

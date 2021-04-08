@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+}
+
+.blog-card {
+  margin: 70px 30px 50px 30px;
+  box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
+  background: rgba(255, 255, 255, 0.438);
+  padding: 30px;
+  h3 {
+    color: grey;
+  }
+  p {
+    margin: 20px;
+  }
+  a {
+    margin: 20px;
+    padding: 10px 20px;
+  }
+}
+.blog-card:hover {
+  background: rgb(243, 243, 243);
+  transition: 0.3s;
+}
+hr {
+  margin: 0 auto;
+  width: 100px;
+  border: 1px solid rgb(192, 192, 192);
+}
+section {
+  background: #e6dace;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 300vh;
+  width: 40%;
+}
+/*# sourceMappingURL=blogs.css.map */
