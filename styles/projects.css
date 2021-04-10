@@ -2,7 +2,15 @@ body {
   text-align: center;
 }
 
-.blog-card {
+h1 {
+  font-size: 25px;
+}
+
+h1 span {
+  color: #ff8000;
+}
+
+.project-card {
   margin: 70px 30px 50px 30px;
   -webkit-box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
           box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
@@ -10,20 +18,24 @@ body {
   padding: 30px;
 }
 
-.blog-card h3 {
-  color: grey;
+.project-card h1 {
+  font-size: 25px;
 }
 
-.blog-card p {
+.project-card h3 {
+  color: #858585;
+}
+
+.project-card p {
   margin: 20px;
 }
 
-.blog-card a {
+.project-card a {
   margin: 20px;
   padding: 10px 20px;
 }
 
-.blog-card:hover {
+.project-card:hover {
   background: #f3f3f3;
   -webkit-transition: 0.3s;
   transition: 0.3s;

@@ -1,0 +1,33 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h1 span {
+  color: #ff8000;
+}
+
+.blog-card {
+  margin: 70px 30px 50px 30px;
+  -webkit-box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
+          box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
+  background: rgba(255, 255, 255, 0.438);
+  padding: 30px;
+}
+
+.blog-card h3 {
+  color: grey;
+}
+
+.blog-card p {
+  margin: 20px;
+}
+
+.blog-card a {
+  margin: 20px;
+  padding: 10px 20px;
+}
+/*# sourceMappingURL=blog.css.map */
