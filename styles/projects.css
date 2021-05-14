@@ -49,18 +49,23 @@ body .container .projects {
 }
 
 body .container .projects p {
-  color: grey;
-  margin-bottom: 50px;
+  color: #707070;
+}
+
+body .container .projects p:nth-child(3) {
+  color: white;
+  margin-bottom: 20px;
 }
 
 body .container .projects a {
   text-decoration: none;
+  margin-right: 10px;
   padding: 2px 5px;
   outline: none;
   border: none;
   background: #202020;
   border-radius: 5px;
-  color: white;
+  color: #e0e0e0;
 }
 
 body .container .projects:hover {
@@ -105,4 +110,4 @@ body .container .projects:nth-child(8) {
     grid-row: unset !important;
   }
 }
-/*# sourceMappingURL=Demo.css.map */
+/*# sourceMappingURL=projects.css.map */

@@ -4,30 +4,41 @@ body {
 
 h1 {
   font-size: 25px;
+  color: grey;
 }
 
 h1 span {
-  color: #ff8000;
+  color: crimson;
 }
 
 .blog-card {
   margin: 70px 30px 50px 30px;
+  font-weight: normal;
   -webkit-box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
           box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
-  background: rgba(255, 255, 255, 0.438);
+  border: 2px solid grey;
   padding: 30px;
 }
 
+.blog-card h1 {
+  color: white;
+  font-weight: normal;
+}
+
 .blog-card h3 {
-  color: grey;
+  color: gray;
 }
 
 .blog-card p {
   margin: 20px;
+  color: grey;
+  font-size: 22px;
 }
 
 .blog-card a {
   margin: 20px;
   padding: 10px 20px;
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=blog.css.map */

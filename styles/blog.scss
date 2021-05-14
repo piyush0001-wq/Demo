@@ -3,24 +3,34 @@ body {
 }
 h1 {
   font-size: 25px;
+  color: grey;
 
   span {
-    color: #ff8000;
+    color: crimson;
   }
 }
 .blog-card {
   margin: 70px 30px 50px 30px;
+  font-weight: normal;
   box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
-  background: rgba(255, 255, 255, 0.438);
+  border: 2px solid grey;
   padding: 30px;
+  h1 {
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+  }
   h3 {
-    color: grey;
+    color: rgb(128, 128, 128);
   }
   p {
     margin: 20px;
+    color: grey;
+    font-size: 22px;
   }
   a {
     margin: 20px;
     padding: 10px 20px;
+    text-decoration: none;
+    color: white;
   }
 }

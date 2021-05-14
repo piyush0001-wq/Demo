@@ -32,17 +32,21 @@ body {
       text-align: center;
       transition: 0.3s;
       p {
-        color: grey;
-        margin-bottom: 50px;
+        color: rgb(112, 112, 112);
+      }
+      p:nth-child(3) {
+        color: white;
+        margin-bottom: 20px;
       }
       a {
         text-decoration: none;
+        margin-right: 10px;
         padding: 2px 5px;
         outline: none;
         border: none;
         background: rgb(32, 32, 32);
         border-radius: 5px;
-        color: white;
+        color: rgb(224, 224, 224);
       }
       &:hover {
         background: none;
