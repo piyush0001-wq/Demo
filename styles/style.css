@@ -12,10 +12,12 @@ body {
   font-family: Poppins;
   height: 100vh;
   font-weight: 600;
+  background: #171717;
 }
 
 nav {
-  background: #ffffff;
+  background: #171717;
+  color: white;
   height: 100px;
   width: 100%;
 }
@@ -25,18 +27,13 @@ i {
 }
 
 .logo {
-  color: black;
+  color: #adadad;
   font-size: 25px;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
   display: block;
   float: left;
-}
-
-.logo span {
-  color: #ff8000;
-  font-size: 20px;
 }
 
 .logo h2 {
@@ -55,7 +52,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: black;
+  color: #686868;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
@@ -64,7 +61,7 @@ nav ul li a {
 
 a.active,
 a:hover {
-  background: #ff8000;
+  color: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -96,7 +93,7 @@ a:hover {
 .container .left {
   height: 100vh;
   width: 40%;
-  background: #e6dace;
+  background: #000000;
 }
 
 .container .center {
@@ -105,7 +102,7 @@ a:hover {
   left: 20%;
   height: 70vh;
   width: 60%;
-  background-color: #fcf5ef;
+  background-color: #141414;
   -webkit-box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
           box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
   display: -ms-grid;
@@ -115,8 +112,9 @@ a:hover {
 }
 
 .container .center .leftInfo {
-  background: #eeeceb;
+  background: #1a1a1a;
   text-align: center;
+  color: #919191;
 }
 
 .container .center .leftInfo .myImg {
@@ -129,7 +127,7 @@ a:hover {
 }
 
 .container .center .leftInfo hr {
-  border: 2px solid #ff8000;
+  border: 2px solid crimson;
   width: 80px;
   margin: 30px auto;
 }
@@ -140,7 +138,8 @@ a:hover {
 }
 
 .container .center .rightInfo {
-  background: #ffffff;
+  background: #000000;
+  color: #bebebe;
 }
 
 .container .center .rightInfo h1 {
@@ -153,48 +152,17 @@ a:hover {
   margin: 0px 0 10px 20px;
 }
 
-.container .center .rightInfo a {
-  border: none;
-  outline: none;
-}
-
-.container .center .rightInfo .primary {
-  background: #ff8000;
-  font-weight: 500;
-  border: 2px solid #ff8000;
-  padding: 5px 15px;
-  margin: 10px 20px;
-}
-
-.container .center .rightInfo .primary:hover {
-  background: white;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: black;
-}
-
-.container .center .rightInfo .secondary {
-  background: #ffffff;
-  border: 2px solid #ff8000;
-  padding: 5px 15px;
-  margin: 10px 20px;
-}
-
-.container .center .rightInfo .secondary:hover {
-  background: #ff8000;
-  color: white;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
 .container .center .rightInfo p {
   padding: 10px 20px;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .container .center .rightInfo p a {
-  padding: 5px 15px;
+  color: lightgray;
+}
+
+.container .center .rightInfo p a:hover {
+  color: white;
 }
 
 @media (max-width: 952px) {
@@ -316,7 +284,7 @@ a:hover {
   }
   .container .center .leftInfo p {
     margin-top: 20px;
-    margin-left: 55px;
+    padding-left: 110px;
   }
   .container .center .rightInfo h1 {
     font-size: 40px;

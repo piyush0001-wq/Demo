@@ -10,11 +10,13 @@ body {
   font-family: Poppins;
   height: 100vh;
   font-weight: 600;
+  background: #171717;
 }
 ////////////////////////////////////////////////////////////
 nav {
   // background: #e6dace;
-  background: #ffffff;
+  background: #171717;
+  color: white;
   height: 100px;
   width: 100%;
 }
@@ -22,17 +24,14 @@ i {
   color: black;
 }
 .logo {
-  color: rgb(0, 0, 0);
+  color: rgb(173, 173, 173);
   font-size: 25px;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
   display: block;
   float: left;
-  span {
-    color: #ff8000;
-    font-size: 20px;
-  }
+
   h2 {
     width: 200px;
   }
@@ -47,7 +46,7 @@ nav ul li {
   margin: 0 5px;
 }
 nav ul li a {
-  color: rgb(0, 0, 0);
+  color: rgb(104, 104, 104);
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
@@ -55,7 +54,7 @@ nav ul li a {
 }
 a.active,
 a:hover {
-  background: #ff8000;
+  color: white;
   transition: 0.5s;
 }
 .checkbtn {
@@ -79,7 +78,7 @@ a:hover {
   .left {
     height: 100vh;
     width: 40%;
-    background: #e6dace;
+    background: #000000;
   }
   .center {
     position: absolute;
@@ -87,13 +86,14 @@ a:hover {
     left: 20%;
     height: 70vh;
     width: 60%;
-    background-color: #fcf5ef;
+    background-color: #141414;
     box-shadow: -13px 3px 20px rgba(0, 0, 0, 0.301);
     display: grid;
     grid-template-columns: 40% 60%;
     .leftInfo {
-      background: #eeeceb;
+      background: #1a1a1a;
       text-align: center;
+      color: rgb(145, 145, 145);
       .myImg {
         height: 150px;
         width: 150px;
@@ -103,7 +103,7 @@ a:hover {
         margin: 40px auto;
       }
       hr {
-        border: 2px solid #ff8000;
+        border: 2px solid crimson;
         width: 80px;
         margin: 30px auto;
       }
@@ -113,7 +113,8 @@ a:hover {
       }
     }
     .rightInfo {
-      background: #ffffff;
+      background: #000000;
+      color: rgb(190, 190, 190);
       h1 {
         font-size: 100px;
         font-weight: bold;
@@ -122,39 +123,14 @@ a:hover {
       h3 {
         margin: 0px 0 10px 20px;
       }
-      a {
-        border: none;
-        outline: none;
-      }
-      .primary {
-        background: #ff8000;
-        font-weight: 500;
-        border: 2px solid #ff8000;
-        padding: 5px 15px;
-        margin: 10px 20px;
-      }
-      .primary:hover {
-        background: white;
-        transition: 0.3s;
-        color: black;
-      }
-      .secondary {
-        background: #ffffff;
-        border: 2px solid #ff8000;
-        padding: 5px 15px;
-        margin: 10px 20px;
-      }
-      .secondary:hover {
-        background: #ff8000;
-        color: white;
-        cursor: pointer;
-        transition: 0.3s;
-      }
       p {
         padding: 10px 20px;
-        font-weight: 400;
+        font-weight: 200;
         a {
-          padding: 5px 15px;
+          color: lightgray;
+          &:hover {
+            color: white;
+          }
         }
       }
     }
@@ -279,7 +255,7 @@ a:hover {
         }
         p {
           margin-top: 20px;
-          margin-left: 55px;
+          padding-left: 110px;
         }
       }
       .rightInfo {
